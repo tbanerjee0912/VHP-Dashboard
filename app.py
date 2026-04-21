@@ -140,7 +140,7 @@ def extract_with_gemini(b64_images, run_name):
         raise ValueError("GEMINI_API_KEY not set in Streamlit secrets.")
 
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel("gemini-1.5-flash")
+    model = genai.GenerativeModel("gemini-2.0-flash")
 
     prompt = """You are a precise scientific data extraction engine for pharmaceutical manufacturing.
 These are scanned pages from a VHP (Vaporized Hydrogen Peroxide) sterilization cycle report from a Prince sterilizer.
